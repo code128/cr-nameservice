@@ -1,5 +1,5 @@
 """
-A sample Hello World server.
+Adapted from the Hello World server. 
 """
 import os
 import requests
@@ -28,19 +28,8 @@ def get_metadata(item_name):
 @app.route("/")
 def hello():
     """Return a friendly HTTP greeting."""
-    message = "It's running!"
 
-    project = get_metadata("project/project-id")
-    service = os.environ.get("K_SERVICE", "Unknown service")
-    revision = os.environ.get("K_REVISION", "Unknown revision")
-
-    return render_template(
-        "index.html",
-        message=message,
-        Project=project,
-        Service=service,
-        Revision=revision,
-    )
+    return render_template("index.html")
 
 
 @app.route("/groupname")

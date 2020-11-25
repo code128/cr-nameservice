@@ -145,23 +145,23 @@ code {
 			</div>
 
 			<div class="message">
-				<h1>{{message}}</h1>
-				<h2>Congratulations, you successfully deployed a container image to Cloud Run</h2>
+				<h1>Yay!</h1>
 			</div>
 		</div>
 
 		<div class="details">
-			<p>
-                This created the revision <code>{{Revision}}</code> of the Cloud Run service <code>{{Service}}</code>
-                in the GCP project <code>{{Project}}</code>{{end}}.
-            </p>
+			<h2>
+                This Cloud Run Service gives you random names.
+            </h2>
 
 			<p class="callout">
-				You can deploy any container to Cloud Run that listens for HTTP requests on the port defined by the
-				<code>PORT</code> environment variable.
-				Cloud Run will scale automatically based on requests and you never have to worry about
-				infrastructure.
-			</p>
+				You can get either Groupnames or Nicknames by following these links:
+            </p>
+            <ul>
+                <li><a href="\groupname">\groupname</a>
+                </li>
+                <li><a href="\nickname">\nickname</a>
+            </ul>
 
 			<h3>What's next?</h3>
 			<p class="next">Manage Cloud APIs and libraries in Cloud Code for <a href="https://cloud.google.com/code/docs/vscode/client-libraries" target="_blank" rel="noopener">VSCode</a> or <a href="https://cloud.google.com/code/docs/intellij/client-libraries" target="_blank" rel="noopener">IntelliJ</a></p>
